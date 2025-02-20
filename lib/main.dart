@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
       case 0:
         page = GeneratorPage();
       case 1:
-        page = Placeholder();
+        page = FavoritesPage();
       default:
         throw UnimplementedError('no widget for $selectedIndex');
     }
@@ -101,6 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 }
+
 class GeneratorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
